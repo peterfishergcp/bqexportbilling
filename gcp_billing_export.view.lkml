@@ -339,7 +339,7 @@ view: gcp_billing_export_service {
 }
 
 view: gcp_billing_export_sku {
-  dimension: id {
+  dimension: sku_id {
     type: string
     sql: ${TABLE}.id ;;
   }
