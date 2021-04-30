@@ -1,7 +1,7 @@
 connection: "pf_bqbillingexport"
 
 include: "*.view.lkml"         # include all views in this project
-include: "pfbilling.dashboard.lookml"  # include all dashboards in this project
+include: "billing.dashboard.lookml"  # include all dashboards in this project
 
 explore: gcp_billing_export {
   view_label: "GCP Billing"
