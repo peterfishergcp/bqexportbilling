@@ -589,24 +589,3 @@
     listen:
       Project: gcp_billing_export_project.name
       Service: gcp_billing_export_service.description
-  filters:
-  - name: Service
-    title: Service
-    type: field_filter
-    default_value: ''
-    model: gcp_billing
-    explore: gcp_billing_export
-    field: gcp_billing_export_service.description
-    listens_to_filters: []
-    allow_multiple_values: true
-    required: false
-  - name: Project
-    title: Project
-    type: field_filter
-    default_value: ''
-    model: gcp_billing
-    explore: gcp_billing_export
-    field: gcp_billing_export_project.name
-    listens_to_filters: []
-    allow_multiple_values: true
-    required: false
