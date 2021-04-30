@@ -330,7 +330,7 @@ view: gcp_billing_export_service {
     sql: ${TABLE}.id ;;
   }
 
-  dimension: gcp_billing_export_service.description {
+  dimension: description {
     label: "Service"
     type: string
     sql: ${TABLE}.description ;;
