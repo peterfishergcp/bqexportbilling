@@ -188,7 +188,6 @@ view: gcp_billing_export {
   }
 
   dimension: sku {
-    hidden: yes
     sql: ${TABLE}.sku ;;
   }
 
@@ -235,7 +234,13 @@ view: gcp_billing_export {
     sql: ${TABLE}.usage ;;
   }
 
-  measure: total_usage {
+dimension: inv_month {
+  type: string
+  sql: ${TABLE}.invoice.month ;;
+ }
+
+
+ measure: total_usage {
     description: "The units of Usage is the dimension 'Resource', please use the two together"
     type: sum
     sql: ${gcp_billing_export_usage.usage} ;;
@@ -336,7 +341,6 @@ view: gcp_billing_export_service {
 
 view: gcp_billing_export_sku {
   dimension: id {
-    hidden: yes
     type: string
     sql: ${TABLE}.id ;;
   }
