@@ -1,5 +1,5 @@
-- dashboard: billing
-  title: Billing
+- dashboard: PetersGCPBilling
+  title: Peters Billing
   layout: newspaper
   elements:
   - name: Total Billing Last Month
