@@ -326,12 +326,11 @@ view: gcp_billing_export_labels {
 
 view: gcp_billing_export_service {
   dimension: id {
-    hidden: yes
     type: string
     sql: ${TABLE}.id ;;
   }
 
-  dimension: description {
+  dimension: gcp_billing_export_service.description {
     label: "Service"
     type: string
     sql: ${TABLE}.description ;;
